@@ -6,13 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>js practice</title>
   <link rel="stylesheet" type="text/css" href="design.css" />
-  <script type="text/javascript" src="loop.js"></script>
 </head>
 
 <body>
-  <input id="input" type="text" />
-  <button value="set" />
+  <form action="" onsubmit="setColor()">
+    <input type="text" id="color" name="color" />
+    <input type="submit" id="submit" value="set" name="submit" />
+  </form>
+
   <div id="d1"></div>
+
+  <script>
+    function setColor() {
+      let oBox = document.getElementById("d1");
+      let oColor = document.getElementById('color').value;
+      oBox.style.backgroundColor = oColor;
+    }
+  </script>
 </body>
 
 </html>
