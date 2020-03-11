@@ -9,10 +9,8 @@
 </head>
 
 <body>
-  <form action="" onsubmit="setColor()">
-    <input type="text" id="color" name="color" />
-    <input type="submit" id="submit" value="set" name="submit" />
-  </form>
+  <input type="text" id="color" name="color" />
+  <input type="button" id="submit" value="set" onclick="setColor()" />
 
   <div id="d1"></div>
 
@@ -21,6 +19,8 @@
       let oBox = document.getElementById("d1");
       let oColor = document.getElementById('color').value;
       oBox.style.backgroundColor = oColor;
+      if (oColor != oBox.style.backgroundColor)
+        alert("color invalid");
     }
   </script>
 </body>
