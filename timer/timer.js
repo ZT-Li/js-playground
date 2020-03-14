@@ -9,12 +9,15 @@ window.onload = function () {
     setInterval(colorChange, 750);
     setInterval(colorChange2, 1000);
 
+    //to change the date from number into string
     function toStr(n) {
         if (n < 10)
             return "0" + n;
         else
             return "" + n;
     }
+
+    //to match the numbers of the time with the pictures that needed to be display
     function run() {
         let oDate = new Date()
         let sTime = toStr(oDate.getHours()) + toStr(oDate.getMinutes()) + toStr(oDate.getSeconds());
@@ -24,6 +27,7 @@ window.onload = function () {
         }
     }
 
+    //refresh the function every 0.5 sec
     setInterval(run, 500)
     run();
 }
