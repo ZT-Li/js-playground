@@ -1,0 +1,22 @@
+h1 {
+  color: red;
+}
+
+#icon {
+  width: 120px;
+  height: 120px;
+  background-image: url("pic/icon.png");
+  background-color: black;
+}
+
+#info {
+  width: 480px;
+  height: 300px;
+  background-image: url("pic/infotab.png");
+  visibility: hidden;
+}
+
+div {
+  float: left;
+  margin: 20px;
+}
